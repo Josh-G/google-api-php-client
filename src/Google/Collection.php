@@ -37,6 +37,7 @@ class Google_Collection extends Google_Model implements Iterator, Countable
     }
   }
 
+  #[\ReturnTypeWillChange]
   public function next()
   {
     return next($this->{$this->collection_key});
